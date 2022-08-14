@@ -1,0 +1,66 @@
+header {
+    background: url(../img/bg-slider-06.jpg) center/cover;
+    min-height: 100vh;
+    padding: 20px 0;
+  
+    nav {
+        height: 65px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: $white1;
+        
+            li {
+                font-family: $font1;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:nth-child(1){
+                    font-family: $font3;
+                    text-transform: capitalize; 
+                    font-weight: bold;
+                    font-size: 3rem;
+                }
+            }
+
+            span i {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 180px 0;
+    
+        h1 {
+            @include h1;
+            font-weight: lighter;
+            font-size: 3rem;
+            line-height: 0vw;
+        }
+
+        h2 {
+            @include h2;
+            color: $white1;
+            font-size: 4rem;
+        }
+
+        img {
+            padding: 20px 0px;
+            width: 30px;
+        }
+        p {
+            @include p;
+            color: $grey2;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 8px;
+        }
+    }
+}
