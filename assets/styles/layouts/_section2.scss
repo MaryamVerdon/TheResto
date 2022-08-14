@@ -1,0 +1,80 @@
+.section2 {
+    background: url(../img/bg-menu-01.jpg) no-repeat right;
+    background-position: bottom -200px left 0px;
+    padding: 60px 0;
+    text-align: center;
+    
+
+    h1 {
+        @include h1;
+        font-weight: lighter;
+    }
+
+    h1 + img {
+        padding: 50px 0;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+
+        li {
+            border-bottom: 1px solid $white1;
+            padding-bottom: 10px;
+
+            a {
+                @include p;
+                color: $white1;
+            }
+        }
+        
+    }
+
+    .menu {
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: $white1;
+        width: 60%;
+        margin: 50px auto;
+        border-top: 5px solid $doree;
+
+        .menu-left, .menu-right {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+           
+            .container {
+                display: grid;
+                grid-template-columns: 30% 50% 20%;
+                align-items: center;
+                padding: 20px;
+                border-bottom: 1px dashed $grey2;
+
+                img {
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    @include p;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                }
+
+                p {
+                    @include p;
+                    font-size: 1rem;
+                }
+
+                #price {
+                    color: $doree;
+                    font-weight: 800;
+                }
+            }
+        }  
+    }
+}

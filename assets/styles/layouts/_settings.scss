@@ -32,6 +32,10 @@ $grey3: rgb(240, 240, 240);
     text-decoration: none;
 }
 
+body {
+    background: $black2;
+}
+
 @mixin h1 {
     font-family: $font3;
     color: $doree;
