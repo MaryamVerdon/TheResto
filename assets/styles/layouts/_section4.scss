@@ -1,0 +1,150 @@
+.section4 {
+    padding: 100px 15px 65px;
+    text-align: center;
+    h1 {
+        @include h1;
+                font-weight: lighter;
+                line-height: 2vw;
+                font-size: 2.5rem;
+    }
+
+    h2 {
+        @include h2;
+        font-size: 2rem;
+        letter-spacing: 0;
+        font-weight: bold;
+        color: $white1;
+    }
+
+    img {
+        padding: 30px;
+    }
+
+    .section4-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 1050px;
+        margin: 0 auto;
+
+        .section4-left {
+            .top, .bottom {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                background: $white1;
+                margin-bottom: 20px;
+                margin-right: 20px;
+
+                .left-t, .left-b {
+                    background: url(../img/event-01.jpg) center/cover;
+                    padding: 50px;
+
+                    div {
+                        background: $black2;
+                        height: 70px;
+                        width: 70px;
+                        padding-top: 10px;
+                        
+                        p {
+                            @include p;
+                            color: $white1;
+                
+                            span {
+                                font-size: 1.5rem;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+
+                .left-b {
+                    background: url(../img/event-02.jpg) center/cover;
+                }
+
+                .right {
+                    text-align: left;
+                    padding: 20px;
+                    h4 {
+                        @include p;
+                        font-size: 1.5rem;
+                        font-weight: lighter;
+                    }
+                    p {
+                        @include p;
+                        color: $grey2;
+                        font-size: 0.9rem;
+                        padding: 20px 0;
+                        word-spacing: 5px;
+
+                        i {
+                            letter-spacing: 5px;
+                        }
+                    }
+
+                    a {
+                        @include p;
+                        color: $black1;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .section4-right {
+            background: url(../img/event-03.jpg) center/cover;
+            height: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .section4-right-container {
+                background: $white1;
+                height: 90%;
+                width: 90%;
+
+                div {
+                    background: $black2;
+                    height: 70px;
+                    width: 70px;
+                    padding-top: 10px;
+                    margin: 0 auto;
+                    
+                    p {
+                        @include p;
+                        color: $white1;
+            
+                        span {
+                            font-size: 1.5rem;
+                            font-weight: 800;
+                        }
+                    }
+                } 
+                h4 {
+                    @include p;
+                    font-size: 1.5rem;
+                    font-weight: lighter;
+                    padding: 40px 0px 15px;
+                }
+                h4 + p {
+                    @include p;
+                    color: $grey2;
+                    font-size: 0.9rem;
+                    word-spacing: 5px;
+                    padding-bottom: 60px;
+
+                    i {
+                        letter-spacing: 5px;
+                    }
+                }
+
+                a {
+                    @include p;
+                    color: $black1;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+                
+            }
+        }
+    }
+}

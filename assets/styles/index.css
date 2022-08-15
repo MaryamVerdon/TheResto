@@ -302,4 +302,138 @@ header .header-container p {
   background: black;
   padding: 16px 34px;
   cursor: pointer;
+}
+
+.section4 {
+  padding: 100px 15px 65px;
+  text-align: center;
+}
+.section4 h1 {
+  font-family: allura, sans-serif;
+  color: rgb(211, 151, 40);
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2vw;
+  font-size: 2.5rem;
+}
+.section4 h2 {
+  font-family: poppins, sans-serif;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0;
+  font-weight: bold;
+  color: white;
+}
+.section4 img {
+  padding: 30px;
+}
+.section4 .section4-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.section4 .section4-container .section4-left .top, .section4 .section4-container .section4-left .bottom {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: white;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.section4 .section4-container .section4-left .top .left-t, .section4 .section4-container .section4-left .top .left-b, .section4 .section4-container .section4-left .bottom .left-t, .section4 .section4-container .section4-left .bottom .left-b {
+  background: url(../img/event-01.jpg) center/cover;
+  padding: 50px;
+}
+.section4 .section4-container .section4-left .top .left-t div, .section4 .section4-container .section4-left .top .left-b div, .section4 .section4-container .section4-left .bottom .left-t div, .section4 .section4-container .section4-left .bottom .left-b div {
+  background: rgb(38, 36, 36);
+  height: 70px;
+  width: 70px;
+  padding-top: 10px;
+}
+.section4 .section4-container .section4-left .top .left-t div p, .section4 .section4-container .section4-left .top .left-b div p, .section4 .section4-container .section4-left .bottom .left-t div p, .section4 .section4-container .section4-left .bottom .left-b div p {
+  font-family: roboto, sans-serif;
+  color: white;
+}
+.section4 .section4-container .section4-left .top .left-t div p span, .section4 .section4-container .section4-left .top .left-b div p span, .section4 .section4-container .section4-left .bottom .left-t div p span, .section4 .section4-container .section4-left .bottom .left-b div p span {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.section4 .section4-container .section4-left .top .left-b, .section4 .section4-container .section4-left .bottom .left-b {
+  background: url(../img/event-02.jpg) center/cover;
+}
+.section4 .section4-container .section4-left .top .right, .section4 .section4-container .section4-left .bottom .right {
+  text-align: left;
+  padding: 20px;
+}
+.section4 .section4-container .section4-left .top .right h4, .section4 .section4-container .section4-left .bottom .right h4 {
+  font-family: roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.section4 .section4-container .section4-left .top .right p, .section4 .section4-container .section4-left .bottom .right p {
+  font-family: roboto, sans-serif;
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 20px 0;
+  word-spacing: 5px;
+}
+.section4 .section4-container .section4-left .top .right p i, .section4 .section4-container .section4-left .bottom .right p i {
+  letter-spacing: 5px;
+}
+.section4 .section4-container .section4-left .top .right a, .section4 .section4-container .section4-left .bottom .right a {
+  font-family: roboto, sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.section4 .section4-container .section4-right {
+  background: url(../img/event-03.jpg) center/cover;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section4 .section4-container .section4-right .section4-right-container {
+  background: white;
+  height: 90%;
+  width: 90%;
+}
+.section4 .section4-container .section4-right .section4-right-container div {
+  background: rgb(38, 36, 36);
+  height: 70px;
+  width: 70px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.section4 .section4-container .section4-right .section4-right-container div p {
+  font-family: roboto, sans-serif;
+  color: white;
+}
+.section4 .section4-container .section4-right .section4-right-container div p span {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.section4 .section4-container .section4-right .section4-right-container h4 {
+  font-family: roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 40px 0px 15px;
+}
+.section4 .section4-container .section4-right .section4-right-container h4 + p {
+  font-family: roboto, sans-serif;
+  color: #ccc;
+  font-size: 0.9rem;
+  word-spacing: 5px;
+  padding-bottom: 60px;
+}
+.section4 .section4-container .section4-right .section4-right-container h4 + p i {
+  letter-spacing: 5px;
+}
+.section4 .section4-container .section4-right .section4-right-container a {
+  font-family: roboto, sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
