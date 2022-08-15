@@ -137,37 +137,38 @@
     <div class="section3">
         <div class="section3-container">
             <div class="section3-left">
-                <h1>Time</h1>
-                <h2>Open</h2>
-                <img src="./assets/img/ic-plate.png" alt="icon cuillere fourchette">
-                <h3>Monday - friday</h3>
-                <p>7AM - 11AM (Breakfast) <br> 11AM - 10PM (Lunch/Dinner)</p>
+                <div class="hour-content">
+                    <h1>Time</h1>
+                    <h2>Open</h2>
+                    <img src="./assets/img/ic-plate.png" alt="icon cuillere fourchette">
+                    <h3>Monday - friday</h3>
+                    <p>7AM - 11AM (Breakfast) <br> 11AM - 10PM (Lunch/Dinner)</p>
 
-                <h3>saturday / sunday</h3>
-                <p>8AM - 1PM (Brunch) <br> 1PM - 9PM (Lunch/Dinner)</p>
+                    <h3>saturday / sunday</h3>
+                    <p>8AM - 1PM (Brunch) <br> 1PM - 9PM (Lunch/Dinner)</p>
 
-                <h3>+15 890 979 25 52</h3>
+                    <h3>+15 890 979 25 52</h3>
+                </div>
             </div>
             <div class="section3-right">
                 <h1>Reservation</h1>
                 <h2>online booking</h2>
                 <img src="./assets/img/ic-plate.png" alt="icon cuillere fourchette">
 
-                <form action="#">
+                <div class="form-inputs">
                     <select id="numberPeople">
                         <option value="0">People</option>
                         <option value="2">2</option>
                         <option value="4">4</option>
                         <option value="6">6</option>
                     </select>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="booking-date" id="booking-date" value="2022-08-15" min="2022-08-15" max="2023-12-31">
                     <input type="time" name="time" id="time">
                     <input type="text" id="name" autocomplete="off" placeholder="Name">  
                     <input type="number" id="number" placeholder="Phone">   
                     <input type="text" id="email" autocomplete="off" placeholder="Email">
-
-                    <input type="submit" value="Book now">
-                </form>
+                </div>
+                <button>Book now</button>
             </div>
         </div>
     </div>

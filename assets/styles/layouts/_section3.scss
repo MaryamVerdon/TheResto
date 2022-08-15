@@ -1,0 +1,100 @@
+.section3 {
+    padding: 100px 15px 65px;
+
+    .section3-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        background: $white1;
+        max-width: 1050px;
+        margin: 0 auto;
+    
+        img {
+            margin: 30px 0;
+        }
+
+        .section3-left {
+            background: $black1;
+            color: $white1;
+            text-align: center;
+            padding: 20px;
+        
+            .hour-content {
+                border: 1px dotted $white1;
+                padding: 30px 0;
+
+                h1 {
+                    @include h1;
+                    font-weight: lighter;
+                    line-height: 1vw;
+                }
+    
+                h2 {
+                    @include h2;
+                    font-size: 1.5rem;
+                    letter-spacing: 0;
+                }
+    
+                h3 {
+                    @include p;
+                    color: $doree;
+                    text-transform: uppercase;
+                    margin: 20px 0;
+                }
+    
+                p {
+                    @include p;
+                }
+            }
+           
+        }
+
+        .section3-right {
+            color: $black1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+
+            h1 {
+                @include h1;
+                font-weight: lighter;
+                line-height: 1vw;
+                font-size: 3rem;
+            }
+
+            h2 {
+                @include h2;
+                font-size: 2rem;
+                letter-spacing: 0;
+            }
+            
+            .form-inputs {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin-bottom: 30px;
+               
+                > * {
+                    padding: 10px 0;
+                    margin: 10px;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid $grey2;
+                }
+            }
+            button {
+                @include h2;
+                font-size: 0.7rem;
+                letter-spacing: 4px;
+                color: $white1;
+                border-radius: 50px;
+                background: $black1;
+                padding: 16px 34px;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
